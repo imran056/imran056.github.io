@@ -5,22 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Imran Studioz</title>
 <style>
-:root{--bg:#f4f8fc;--card:#ffffff;--text:#1a1f36;--muted:#5b6478;--accent:#6c4cf5;--accent2:#1fb6ff}
-@media (prefers-color-scheme:dark){:root{--bg:#0f1220;--card:#181c2e;--text:#eef0f8;--muted:#a3a9c0}}
+:root{--bg:#f4f8fc;--card:#ffffff;--text:#1a1f36;--muted:#5b6478;--accent:#6c4cf5;--accent2:#1fb6ff;--line:rgba(108,76,245,.25)}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1220;--card:#181c2e;--text:#eef0f8;--muted:#a3a9c0;--accent:#8f78ff}}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
 .card{background:var(--card);max-width:520px;width:100%;border-radius:20px;padding:36px 28px;box-shadow:0 10px 30px rgba(0,0,0,.08);text-align:center}
-.logo{width:72px;height:72px;border-radius:18px;margin:0 auto 18px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;gap:5px}
+.logo{width:72px;height:72px;border-radius:18px;margin:0 auto 18px;background:linear-gradient(135deg,#6c4cf5,#1fb6ff);display:flex;align-items:center;justify-content:center;gap:5px}
 .logo span{display:block;width:6px;border-radius:3px;background:#fff}
 h1{font-size:26px;margin-bottom:6px}
 p{color:var(--muted);line-height:1.6;margin-bottom:22px}
-.app{border:1px solid rgba(108,76,245,.25);border-radius:14px;padding:18px;margin-bottom:22px}
+.app{border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:22px}
 .app h2{font-size:19px;margin-bottom:4px}
 .app p{margin-bottom:14px;font-size:14px}
-a.btn{display:inline-block;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;text-decoration:none;padding:11px 22px;border-radius:999px;font-weight:600;font-size:15px}
-.links{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;font-size:14px}
+a.btn{display:inline-block;background:linear-gradient(135deg,#6c4cf5,#1fb6ff);color:#fff;text-decoration:none;padding:11px 22px;border-radius:999px;font-weight:600;font-size:15px}
+.links{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;font-size:14px;margin-bottom:18px}
 .links a{color:var(--accent);text-decoration:none}
-footer{margin-top:22px;font-size:12px;color:var(--muted)}
+.contact{border-top:1px solid var(--line);padding-top:16px;font-size:14px;color:var(--muted)}
+.contact a{color:var(--accent);text-decoration:none;font-weight:600;word-break:break-all}
+footer{margin-top:18px;font-size:12px;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -36,7 +38,9 @@ footer{margin-top:22px;font-size:12px;color:var(--muted)}
 <div class="links">
 <a href="https://imran056.github.io/vibewave-privacy/">Privacy Policy</a>
 <a href="https://imran056.github.io/vibewave-privacy/terms.html">Terms of Service</a>
-<a href="mailto:khattak.imran056@gmail.com">Contact</a>
+</div>
+<div class="contact">
+Contact: <a href="mailto:khattak.imran056@gmail.com">khattak.imran056@gmail.com</a>
 </div>
 <footer>© 2026 Imran Studioz</footer>
 </div>
